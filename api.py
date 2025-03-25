@@ -5,8 +5,8 @@ import numpy as np
 from pydantic import BaseModel
 
 # 📌 Cargamos el modelo y el escalador
-modelo = joblib.load("C:/Users/Helmut Garcia/Downloads/clasificacion de rentabilidad de salud de empresa/mi api rentabilidad/modelo_empresas.pkl")  # Cargar el modelo entrenado
-scaler = joblib.load("C:/Users/Helmut Garcia/Downloads/clasificacion de rentabilidad de salud de empresa/mi api rentabilidad/escalador.pkl")  # Cargar el escalador de datos
+modelo = joblib.load("modelo_empresas.pkl")  # Cargar el modelo entrenado
+scaler = joblib.load("escalador.pkl")  # Cargar el escalador de datos
 
 # 📌 Inicializamos la API
 app = FastAPI()
